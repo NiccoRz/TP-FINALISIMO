@@ -346,6 +346,7 @@ void menu() ///Muestra el menu
                             }
 
                             break;
+                            ///--------------------2)2.[4]Modificar Cantidad de Noches------------------///
                         case 4:
                                 system("cls");
                                 gotoxy(50,2);

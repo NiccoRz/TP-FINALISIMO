@@ -1361,7 +1361,7 @@ int condicionControl(char archivo[],int numHab,int control)///Limita el tipo de 
     return flag;
 }
 
-void modificarNoches(char archivo[],int numHab)
+void modificarNoches(char archivo[],int numHab) ///Modifica la cantidad de Noches
 {
     int pos = busquedaHabitacionposicion(archivo,numHab);
     stReserva A;
