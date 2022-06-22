@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1491400450 source:c:\users\nicor\onedrive\escritorio\utn\aprimeraño\programación y laboratorio i\proyectofinal\gotoxy.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+
+1655911294 source:c:\users\nicor\onedrive\escritorio\utn\aprimeraño\programación y laboratorio i\proyectofinal\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<windows.h>
+	"Hotel.h"
+
+1655911708 source:c:\users\nicor\onedrive\escritorio\utn\aprimeraño\programación y laboratorio i\proyectofinal\hotel.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<windows.h>
+	"Hotel.h"
+
+1655911723 c:\users\nicor\onedrive\escritorio\utn\aprimeraño\programación y laboratorio i\proyectofinal\hotel.h
+
