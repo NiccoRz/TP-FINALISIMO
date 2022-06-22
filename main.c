@@ -352,7 +352,7 @@ void menu() ///Muestra el menu
                                 gotoxy(50,2);
                                 printf("HOTEL YAPEYU");
                                 gotoxy(36,4);
-                                printf("Modificando Cantidad de Noches de la Habitacion %d\n",huesped,habit);
+                                printf("Modificando Cantidad de Noches de la Habitacion");
                                 flag = busquedaPorHabitacion("Reservas.bin",habit);
                                 modificarNoches("Reservas.bin",habit);
                             break;
@@ -552,6 +552,10 @@ void menu() ///Muestra el menu
                     gotoxy(40,4);
                     printf("Busqueda por Numero de Habitacion");
                     gotoxy(8,6);
+                    printf("Habitaciones Ocupadas:");
+                    gotoxy(8,8);
+                    mostrarOcupadas("Habitaciones.bin");
+                    gotoxy(8,10);
                     printf("Ingrese numero de habitacion a buscar: ");
                     scanf("%d",&bNumHab);
                     flag = busquedaPorHabitacion("Reservas.bin",bNumHab);
