@@ -355,6 +355,8 @@ void menu() ///Muestra el menu
                                 flag = busquedaPorHabitacion("Reservas.bin",habit);
                                 modificarNoches("Reservas.bin",habit);
                             break;
+                        case 0:
+                            break;
                         default:
                             gotoxy(68,20);
                             printf("La opcion Ingresada no existe...");
