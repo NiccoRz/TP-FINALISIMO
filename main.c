@@ -423,7 +423,7 @@ void menu() ///Muestra el menu
                     gotoxy(40,4);
                     printf("Habitaciones Dobles Disponibles");
                     printf("\n");
-                    printf("Habitaciones Dobles:\n\n");
+                    printf("  Habitaciones Dobles:\n\n");
                     mostrarDoblesDisponibles("Habitaciones.bin");
                     printf("\n\n");
                     system("PAUSE");
@@ -434,7 +434,7 @@ void menu() ///Muestra el menu
                     gotoxy(50,2);
                     printf("HOTEL YAPEYU");
                     gotoxy(40,4);
-                    printf("Habitaciones Triples Disponibles");
+                    printf("  Habitaciones Triples Disponibles");
                     printf("\n");
                     printf("\n\nHabitaciones Triples: \n\n");
                     mostrarTriplesDisponibles("Habitaciones.bin");
@@ -447,7 +447,7 @@ void menu() ///Muestra el menu
                     gotoxy(50,2);
                     printf("HOTEL YAPEYU");
                     gotoxy(40,4);
-                    printf("Habitaciones Cuadruples Disponibles");
+                    printf("  Habitaciones Cuadruples Disponibles");
                     printf("\n");
                     printf("\n\nHabitaciones Cuadruples: \n\n");
                     mostrarCuadruplesDisponibles("Habitaciones.bin");
@@ -460,7 +460,7 @@ void menu() ///Muestra el menu
                     gotoxy(50,2);
                     printf("HOTEL YAPEYU");
                     gotoxy(40,4);
-                    printf("Habitaciones Suites Disponibles");
+                    printf("  Habitaciones Suites Disponibles");
                     printf("\n");
                     printf("\n\nHabitaciones Suites: \n\n");
                     mostrarSuitesDisponibles("Habitaciones.bin");

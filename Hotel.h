@@ -43,7 +43,6 @@ typedef struct
     int cantidadPersonas;
 } stReserva;
 
-void menu();
 void cargarReserva(char archivoReserva[]);
 int valorEstacionamiento(char c,stReserva A);
 void mostrarArchivo(char archivoReserva[]);

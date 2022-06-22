@@ -80,7 +80,7 @@ void cargarReserva(char archivoReserva[])///El usuario carga una reserva.
         validacion(&b,10,18);
 
         gotoxy(10,19);
-        printf("- Estacionamiento(s/n) :");
+        printf("- Estacionamiento(s/n) : ");
         fflush(stdin);
         scanf("%c",&c);
         validacion(&c,10,20);
@@ -137,6 +137,8 @@ void cargarReserva(char archivoReserva[])///El usuario carga una reserva.
         printf("HOTEL YAPEYU");
         gotoxy(43,4);
         printf("RESERVA - RESUMEN DE PAGO ");
+        gotoxy(10,6);
+        printf("Cantidad de Noches: %d",reserva.cantNoches);
         gotoxy(10,8);
         printf("Valor de Habitacion por noche ($ %d)", reserva.habitacionReserva.precioHabitacion);
         gotoxy(50,8);
@@ -426,26 +428,26 @@ void mostrarDoblesDisponibles(char archivoHabitaciones[])///Muestra las habitaci
                 if(room.numHabitacion<10 && (room.disponibilidad=='s'||room.disponibilidad=='S'))
                 {
                     printf ("\033[1;32m");
-                    printf("[ 0%d ]", room.numHabitacion);
+                    printf("\t\[ 0%d ]", room.numHabitacion);
 
 
                 }
                 else if (room.numHabitacion<10 && (room.disponibilidad=='n'||room.disponibilidad=='N'))
                 {
                     printf ("\033[1;31m"); // rojo
-                    printf("[ 0%d ]", room.numHabitacion);
+                    printf("\t\[ 0%d ]", room.numHabitacion);
 
                 }
                 else if (room.numHabitacion >= 10 && (room.disponibilidad=='s'||room.disponibilidad=='S'))
                 {
                     printf ("\033[1;32m");
-                    printf("[ %d ]", room.numHabitacion);
+                    printf("\t\[ %d ]", room.numHabitacion);
 
                 }
                 else if (room.numHabitacion >= 10 && (room.disponibilidad=='n'||room.disponibilidad=='N'))
                 {
                     printf ("\033[1;31m"); // rojo
-                    printf("[ %d ]", room.numHabitacion);
+                    printf("\t\[ %d ]", room.numHabitacion);
                 }
                 printf ("\033[0m");
                 i++;
@@ -479,24 +481,24 @@ void mostrarTriplesDisponibles(char archivoHabitaciones[])///Muestra las habitac
                 if(room.numHabitacion<10 && (room.disponibilidad=='s'||room.disponibilidad=='S'))
                 {
                     printf ("\033[1;32m");//verde
-                    printf("[ 0%d ]", room.numHabitacion);
+                    printf("\t\[ 0%d ]", room.numHabitacion);
 
                 }
                 else if (room.numHabitacion<10 && (room.disponibilidad=='n'||room.disponibilidad=='N'))
                 {
                     printf ("\033[1;31m"); // rojo
-                    printf("[ 0%d ]", room.numHabitacion);
+                    printf("\t\[ 0%d ]", room.numHabitacion);
                 }
                 else if (room.numHabitacion >= 10 && (room.disponibilidad=='s'||room.disponibilidad=='S'))
                 {
                     printf ("\033[1;32m");
-                    printf("[ %d ]", room.numHabitacion);
+                    printf("\t\[ %d ]", room.numHabitacion);
 
                 }
                 else if (room.numHabitacion >= 10 && (room.disponibilidad=='n'||room.disponibilidad=='N'))
                 {
                     printf ("\033[1;31m"); // rojo
-                    printf("[ %d ]", room.numHabitacion);
+                    printf("\t\[ %d ]", room.numHabitacion);
                 }
                 printf ("\033[0m");
                 i++;
@@ -519,13 +521,13 @@ void mostrarCuadruplesDisponibles(char archivoHabitaciones[])///Muestra las habi
                 if ((room.disponibilidad=='s'||room.disponibilidad=='S'))
                 {
                     printf ("\033[1;32m");
-                    printf("[ %d ]", room.numHabitacion);
+                    printf("\t\[ %d ]", room.numHabitacion);
 
                 }
                 else if ((room.disponibilidad=='n'||room.disponibilidad=='N'))
                 {
                     printf ("\033[1;31m"); // rojo
-                    printf("[ %d ]", room.numHabitacion);
+                    printf("\t\[ %d ]", room.numHabitacion);
                 }
                 printf ("\033[0m");
             }
@@ -547,13 +549,13 @@ void mostrarSuitesDisponibles(char archivoHabitaciones[])///Muestra las habitaci
                 if ((room.disponibilidad=='s'||room.disponibilidad=='S'))
                 {
                     printf ("\033[1;32m");
-                    printf("[ %d ]", room.numHabitacion);
+                    printf("\t\[ %d ]", room.numHabitacion);
 
                 }
                 else if ((room.disponibilidad=='n'||room.disponibilidad=='N'))
                 {
                     printf ("\033[1;31m"); // rojo
-                    printf("[ %d ]", room.numHabitacion);
+                    printf("\t\[ %d ]", room.numHabitacion);
                 }
                 printf ("\033[0m");
             }
